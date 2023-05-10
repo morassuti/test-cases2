@@ -1,4 +1,4 @@
-package Module1;
+package Module1_Level1;
 import java.util.Scanner;
 
 public class longestWord {
