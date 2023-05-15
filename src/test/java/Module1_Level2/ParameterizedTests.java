@@ -4,10 +4,11 @@ import org.example.Calculator;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
+import org.junit.jupiter.params.provider.ValueSource;
+import static org.junit.Assert.assertEquals;
 import java.util.stream.Stream;
 
-import static org.junit.Assert.assertEquals;
+
 
 public class ParameterizedTests extends Calculator {
 
@@ -25,6 +26,12 @@ public class ParameterizedTests extends Calculator {
         assertEquals(resultExpo, expon);
     }
 
+
+    @ParameterizedTest
+    @ValueSource(ints = {3,9,15})
+    void isDivisibleByThree(int number){
+        assertEquals(0, number % 3);
+    }
 
     private static Stream<Arguments>addArguments(){
         return Stream.of(
