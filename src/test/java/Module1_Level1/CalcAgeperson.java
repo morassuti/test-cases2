@@ -1,6 +1,6 @@
 package Module1_Level1;
 
-public class CalcAge {
+public class CalcAgeperson {
 
     public static void main(String[] args){
         Person person = new Person();
