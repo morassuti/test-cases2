@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Code to exercise basic OOP without constructor
 // training
-public class TestCar {
+public class CarTest {
     public static void main(String[] args) {
 
         Cars car1 = new Cars();
