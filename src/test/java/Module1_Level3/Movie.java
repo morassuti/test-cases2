@@ -24,4 +24,9 @@ public class Movie {
         return year;
     }
 
+    @Override
+    public String toString() {
+        return "Movie = " + title + ", actor = " + actor + ", year = " + year + "]";
+    }
+
 }
