@@ -14,6 +14,5 @@ public class factorial {
             x *= i;
         }
         System.out.println(n + x);
-
     }
 }

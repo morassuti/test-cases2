@@ -23,6 +23,5 @@ public class capitalize {
             }
         System.out.println(capsentence.toString().trim());
         }
-
     }
 
