@@ -23,9 +23,9 @@ public class LoginTest {
         WebDriver driver = new ChromeDriver(options); //Launch
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        
-        //LaunchPage lp = new LaunchPage(driver);
-        LaunchPage lp = PageFactory.initElements(driver, LaunchPage.class);
+
+        LaunchPage lp = new LaunchPage(driver);
+        //LaunchPage lp = PageFactory.initElements(driver, LaunchPage.class);
         HomePage hp = lp.NavigateToHomePage();
         //hp.validateTitle("Testing");
         EnterUsername enterUsername = hp.gotoLoginPage();
