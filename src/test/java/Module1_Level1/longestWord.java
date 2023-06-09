@@ -24,7 +24,7 @@ public class longestWord {
                 longWord = word;
             }
         }
-        
+
         System.out.println("Longest word of the phrase is: " + longWord);
     }
 }
