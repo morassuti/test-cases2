@@ -1,9 +1,5 @@
 package Module1_Level3;
-
 import java.util.Scanner;
-
-// Code to exercise basic OOP without constructor
-// training
 public class CarTest {
     public static void main(String[] args) {
 

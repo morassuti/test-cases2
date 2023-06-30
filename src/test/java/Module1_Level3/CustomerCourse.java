@@ -1,7 +1,5 @@
 package Module1_Level3;
-
 public class CustomerCourse {
-
     public static void main(String[] args) {
         Customer cust1 = new Customer();
         Course cour1 = new Course();

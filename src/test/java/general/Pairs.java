@@ -1,4 +1,4 @@
-package Module1_Level1;
+package general;
 
 public class Pairs {
     public static void main (String[] args){

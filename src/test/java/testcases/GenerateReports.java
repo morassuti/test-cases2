@@ -6,9 +6,7 @@ import com.aventstack.extentreports.Status;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import reports.ExtentManager;
-
-
-public class LoginTest {
+public class GenerateReports {
     private ExtentTest test;
     private ExtentReports report;
 
@@ -22,6 +20,5 @@ public class LoginTest {
     public void login(){
         test.log(Status.INFO, "First Test Case");
         test.log(Status.PASS, "Test Passed");
-        //test.addScreenCaptureFromPath("","");
     }
 }

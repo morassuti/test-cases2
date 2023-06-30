@@ -12,9 +12,6 @@ public class MovieTest {
 
             String expectedTitle = "The Matrix";
             assertThat(matri.getTitle()).withFailMessage(MOVIE_FIELD_ERROR, "title",matri.getTitle(), expectedTitle).isEqualTo(expectedTitle);
-
-            System.out.println(matri);
-            System.out.println(titanic);
         }
     }
 

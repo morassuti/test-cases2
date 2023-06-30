@@ -1,10 +1,9 @@
 package Module1_Level3;
-
 public class Movie {
 
-    private String title;
-    private String actor;
-    private int year;
+    private final String title;
+    private final String actor;
+    private final int year;
 
     public Movie(String title, String actor, int year) {
         this.title = title;
