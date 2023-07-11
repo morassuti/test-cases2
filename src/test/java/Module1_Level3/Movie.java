@@ -1,6 +1,5 @@
 package Module1_Level3;
 public class Movie {
-
     private final String title;
     private final String actor;
     private final int year;
@@ -13,14 +12,6 @@ public class Movie {
 
     public String getTitle() {
         return title;
-    }
-
-    public String getActor() {
-        return actor;
-    }
-
-    public int getYear() {
-        return year;
     }
 
     @Override

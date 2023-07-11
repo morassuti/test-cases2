@@ -1,14 +1,13 @@
 package Module1_Level1;
 public class Person {
-    String name;
-    String address;
-    int age;
-
-    public void ValidateAgePerson (){
+    private int age;
+    public String validateAgePerson() {
         if (age >= 18)
-            System.out.println("Person is 18 or over");
-        else{
-            System.out.println("Person under 18");
-        }
+            return "Person is 18 or over";
+        else
+            return "Person under 18";
+    }
+    public void setAge(int age) {
+        this.age = age;
     }
 }

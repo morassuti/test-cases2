@@ -1,24 +1,25 @@
 package Module1_Level1;
-import java.util.Scanner;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class LongestWord {
-    public static void main(String[] args){
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the phrase: ");
-        String ph = scanner.nextLine();
-
-        String [] words = ph.split(" ");
-
+    public static String findLongestWord(String phrase) {
+        String[] words = phrase.split(" ");
         int maxLength = 0;
         String longWord = "";
 
-        for (String word : words){
+        for (String word : words) {
             if (word.length() > maxLength) {
                 maxLength = word.length();
                 longWord = word;
             }
         }
-        System.out.println("Longest word of the phrase is: " + longWord);
+        return longWord;
+    }
+    @Test
+    public void testFindLongestWord() {
+        String phrase = "Helo";
+        String result = LongestWord.findLongestWord(phrase);
+        Assert.assertEquals(result, "Hello", "Incorrect longest word found");
     }
 }
