@@ -5,7 +5,8 @@ import org.testng.annotations.Test;
 import static Module1_Level1.Factorial.calculateFactorial;
 import static Module1_Level1.Simple.getCharacterCount;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
+
 public class SimpleTest {
 
     @Test

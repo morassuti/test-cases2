@@ -1,19 +1,17 @@
 package Module1_Level2;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
+import org.junit.runner.RunWith;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Arrays;
 import java.util.Collection;
-
-import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class Modularization {
 
-    private int factorial;
-    private int expnumber;
+    private final int factorial;
+    private final int expnumber;
 
     public Modularization(int factorial, int expnumber) {
         this.factorial = factorial;
